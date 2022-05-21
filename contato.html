@@ -5,29 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-    <h1>Entre em Contato</h1>
+    <ul id="menu">
+        <li>
+           <a href="index.html"> Home </a>
+        </li>
+        <li>
+           <a href="contato.html"> Contato </a>
+        </li>
+     </ul>
+  
+     <h1 class="center">Entre em contato comigo</h1>
+  
+     <div class="container mb-50">
+        <div>
+           <form>
+              <label for="nome">Nome:</label> <br>
+              <input type="text" id="nome" onkeyup='validaNome()'>
+              <div id='txtNome'></div>
+              <br>
+              <label for="email">E-mail:</label> <br>
+              <input type="email" id="email" onkeyup='validaEmail()'>
+              <div id='txtEmail'></div>
+              <br>
+              <label for="assunto">Assunto:</label> <br>
+              <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+              <div id='txtAssunto'></div>
+              <br>
+              <br>
+              <button onclick="enviar()" >Enviar</button>
+           </form>
+        </div>
+  
+        <div class="ml-50">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1625925699013!2d-46.696612284407344!3d-23.526653766197985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8741ca204a7%3A0x3c8401da36644d03!2sBarbearia%20Industrial!5e0!3m2!1spt-BR!2sbr!4v1647259819416!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p class="p">Rafael Rodrigues Barbearia Clássica <br>
+                R. Caio Graco, 428 <br>
+                Vila Romana - São Paulo</p>
+          
+        </div>
+     </div>
+  
+  
+     <hr>
+     <footer>
 
-    <form action="">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/rafaeldiasrodrigues92/" target="_blank">
+                <img class="tm-social p-30" src="./assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1625925699013!2d-46.696612284407344!3d-23.526653766197985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8741ca204a7%3A0x3c8401da36644d03!2sBarbearia%20Industrial!5e0!3m2!1spt-BR!2sbr!4v1647259819416!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="https://github.com/RafaelRodrigues92" target="_blank">
+                <img class="tm-social p-30" src="./assets/img/GitHub-Mark.png" alt="Logo do GitHub">
+            </a>
 
-    </form>
-    
-</body>
-</html>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="tm-social p-30" src="./assets/img/instagram.png" alt="Logo do Intagram">
+            </a>
+
+        </div>
+
+        <p class="center">
+            Todos os direitos reservados: Rafael Dias Rodrigues &copy
+        </p>
+    </footer>
+  
+     <script src="./js/script.js"></script>
+     
+  </body>
+  </html>
