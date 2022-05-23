@@ -1,5 +1,6 @@
 /*
 Case Sensitive = reconhece letras maiusculas e minusculas
+
 por Tag: getElementByTagName()
 por Id: getElementById()
 por Nome: getElementsByName()
@@ -67,8 +68,8 @@ function enviar() {
 }
 
 function mapaZoom() {
-   mapa.style.width = '800px'
-   mapa.style.height = '600px'
+   mapa.style.width = '600px'
+   mapa.style.height = '450px'
 }
 
 function mapaNormal() {
